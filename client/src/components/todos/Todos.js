@@ -1,5 +1,7 @@
 import { useState, useEffect } from 'react';
 import axios from 'axios';
+import TodoList from './TodoList';
+import TodoForm from './TodoForm';
 
 const Todos = () => {
   const [todos, setTodos] = useState([])
@@ -59,7 +61,12 @@ const Todos = () => {
 
   return (
     <>
-
+      <TodoForm addTodo={addTodo} />
+      <TodoList 
+        todos={todos} 
+        deleteTodo={deleteTodo}
+        updateTodo={updateTodo}
+      />
     </>
   )
 }
