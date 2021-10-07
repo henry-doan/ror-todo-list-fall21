@@ -25,7 +25,7 @@ const Todo = ({ id, title, complete, deleteTodo, updateTodo }) => {
           :
           <button onClick={() => setEdit(true)}>Edit</button>
         }
-        <button onClick={() => deleteTodo(id)}>Delete</button>
+        <button onClick={() => deleteTodo(id)}>Delete Todo</button>
       </li>
       <Comments todoId={id} />
     </>
