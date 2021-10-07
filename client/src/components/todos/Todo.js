@@ -10,7 +10,7 @@ const Todo = ({ id, title, complete, deleteTodo, updateTodo }) => {
       <li>
         {title}
         <br />
-        Complete: { complete ? "Yes" : "No" }
+        Complete: { complete ? "Complete" : "Not Complete" }
         {
           editing ?
           <>
